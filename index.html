@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kulbir Singh</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="section1">
+        <div class="section-left">
+          <div class="mobile_header">
+            <h1>Kulbir Singh</h1>
+            <button>
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="tablet_view">
+            <a href="#work">
+              <h3 class="work_main">Work</h3>
+            </a>
+            <ul class="projects">
+              <li><a href="work/farmerfresh.html">Farmerfresh Website</a></li>
+              <li><a href="work/website_redesign.html">Website rebuild</a></li>
+              <li><a href="work/patch.html">Patch</a></li>
+              <li><a href="work/farmerfresh_Logo.html">Farmerfresh Logo</a></li>
+            </ul>
+            <h3>Contact</h3>
+            <ul class="social">
+              <li>
+                <a href="https://www.behance.net/kulbirsing3694"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kulbirsp/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="introduction">
+          <h1>
+            "My name is Kulbir Singh and I am a confident, passionate and
+            creative designer who conceptualise innovative design solution to
+            enhance user experience."
+          </h1>
+          <a href="#work"> Scroll down to see my work </a>
+        </div>
+        <div class="work" id="work">
+          <div class="work1 workb workt">
+            <a href="work/farmerfresh.html" class="image_work">
+              <div class="inner_image_work">
+                <img src="images/A1.png" alt="image1" />
+              </div>
+              <div class="inner_text">
+                <h2 class="hiddentext">Farmerfresh Website</h2>
+              </div>
+            </a>
+          </div>
+          <div class="work1 workb">
+            <a href="work/website_redesign.html" class="image_work">
+              <div class="inner_image_work">
+                <img src="images/A3.png" alt="image1" />
+              </div>
+              <div class="inner_text">
+                <h2 class="hiddentext1">Classifieds</h2>
+              </div>
+            </a>
+          </div>
+          <div class="work1 workb">
+            <a href="work/patch.html" class="image_work">
+              <div class="inner_image_work">
+                <img src="images/A2.png" alt="image1" />
+              </div>
+              <div class="inner_text">
+                <h2 class="hiddentext2">Patch</h2>
+              </div>
+            </a>
+          </div>
+          <div class="work1 workb">
+            <a href="work/farmerfresh_Logo.html" class="image_work">
+              <div class="inner_image_work">
+                <img src="images/farmerfreshlogo.png" alt="image1" />
+              </div>
+              <div class="inner_text">
+                <h2 class="hiddentext3">Farmerfresh Logo</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a class="fixedbutton" href="#">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <footer>
+          <p>Designed and Developed by <b> Kulbir Singh </b></p>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      var button = document.querySelector(".mobile_header button");
+      button.addEventListener("click", function () {
+        document.querySelector(".tablet_view").classList.toggle("active");
+        this.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

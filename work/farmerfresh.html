@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flexmasonry@0.2.3/dist/flexmasonry.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Farmerfresh</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <section class="section1">
+            <div class="section-left">
+                <div class="mobile_header">
+                    <a href="../index.html">
+                        <h1>Kulbir Singh</h1>
+                    </a>
+                    <button >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                
+                <div class="tablet_view">
+                    <h3 class="work_main">Work</h3>
+                    <ul class="projects">
+                        <li><a href="../work/farmerfresh.html">Farmerfresh Website</a></li>
+                        <li><a href="../work/website_redesign.html">Website rebuild</a></li>
+                        <li><a href="../work/patch.html">Patch</a></li>
+                        <li><a href="../work/farmerfresh_Logo.html">Farmerfresh Logo</a></li>
+                    </ul>
+                    <h3>Contact</h3>
+                    <ul class="social">
+                        <li><a href="https://www.behance.net/kulbirsing3694"><i class="fa-brands fa-behance"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kulbirsp/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section class="farmerfresh">
+                <div class="bgimage">
+                    <img src="../images/1.png" alt="farmerfresh_image">
+                </div>
+                <section class="wrapperproject">
+                    <div>
+                        <h2>Farmerfresh</h2>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="problem">
+                        <h3>Problem</h3>
+                        <p>The research data shows that organic farmers of Vancouver face a lot of issues while selling
+                            their
+                            products.
+                            Less number of spots in local farmer market, transportation cost, price disparity, limited
+                            audience
+                            base.</p>
+                    </div>
+                    <div class="solution">
+                        <h3>Solution</h3>
+                        <p>FarmerFresh is a mobile application that
+                            acts as a virtual marketplace for certified
+                            organic farmers and organic food
+                            consumers to sell and buy the fresh
+                            organic produce from the convenience of
+                            their homes.</p>
+                    </div>
+                    <div class="wireframefarmerfresh">
+                        <h3>Wireframes</h3>
+                        <div class="wireframes">
+                            <div>
+                                <div class="wireframe1 wireframes-item">
+                                    <div class="wireframe-inner">
+                                        <img src="../images/w1.png" alt="w1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="wireframe2 wireframes-item">
+                                    <div class="wireframe-inner"><img src="../images/w2.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="wireframe3 wireframes-item">
+                                    <div class="wireframe-inner"><img src="../images/w3.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="wireframe4 wireframes-item">
+                                    <div class="wireframe-inner"><img src="../images/w4.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockupfarmerfresh">
+                        <h3>Mockups</h3>
+                        <div class="mockups">
+                            <div class="mockup1">
+                                <span class="smt10 ls1">Desktop Screen</span>
+                                <img src="../images/m1.png" alt="">
+                            </div>
+                            <div class="mockup2">
+                                <span class="smt10 ls1">Mobile Screen</span>
+                                <img src="../images/m2.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            
+                <div class="thankyou">
+                    <img src="../images/16.png" alt="">
+                </div>
+             </section>
+
+
+                <footer>
+                    <p>Designed and Developed by <b> Kulbir Singh </b> </p>
+                </footer>
+    </div>
+
+    <script src="https://unpkg.com/flexmasonry@0.2.3/dist/flexmasonry.js"></script>
+    <script>
+        FlexMasonry.init('.wireframes', {
+            breakpointCols: {
+                'min-width: 960px': 2,
+                'min-width: 768px': 1
+            }
+        });
+    </script>
+    <script>
+        var button  = document.querySelector(".mobile_header button");
+        button.addEventListener('click', function() {
+            document.querySelector(".tablet_view").classList.toggle('active');
+            this.classList.toggle("active")
+        });
+    </script>
+</body>
+
+</html>
